@@ -9,12 +9,20 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return MaterialApp(
+      title: 'Basic Flutter App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        fontFamily: 'MonaSans',
       ),
+      home: ListScreen(),
     );
+  }
+}
+
+class ListScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }
