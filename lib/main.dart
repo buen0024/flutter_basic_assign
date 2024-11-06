@@ -64,6 +64,49 @@ class ListScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text(
+                'MonaSans Regular',
+                style: TextStyle(
+                    fontFamily: 'MonaSans', fontStyle: FontStyle.normal),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.favorite),
+              title: Text(
+                'MonaSans Italic',
+                style: TextStyle(
+                    fontFamily: 'MonaSans',
+                    fontStyle: FontStyle.italic), // Italic variant
+              ),
+            ),
+            SizedBox(height: 10),
+            ListTile(
+              trailing: CircleAvatar(child: Icon(Icons.person)),
+              title: Text(
+                'MonaSan Bold',
+                style: TextStyle(
+                    fontFamily: 'MonaSans', fontWeight: FontWeight.w700),
+              ),
+            ),
+            SizedBox(height: 10),
+            ListTile(
+              leading: Icon(Icons.star),
+              title: Text(
+                'Arial',
+                style: TextStyle(fontFamily: 'Arial'),
+              ),
+            ),
+            SizedBox(height: 10),
+            ListTile(
+              trailing: Icon(Icons.cake),
+              title: Text(
+                'Times New Roman',
+                style: TextStyle(fontFamily: 'Times New Roman'),
+              ),
+            ),
+            SizedBox(height: 20),
           ],
         ),
       ),
